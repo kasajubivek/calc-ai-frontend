@@ -148,7 +148,8 @@ export default function Home() {
         if (canvas) {
             const response = await axios({
                 method: 'post',
-                url: `${import.meta.env.VITE_API_URL}/calculate`,
+                // url: `${import.meta.env.VITE_API_URL}/calculate`,
+                url: 'https://calc-ai-backend-7tkk.onrender.com/calculate',
                 data: {
                     image: canvas.toDataURL('image/png'),
                     dict_of_vars: dictOfVars
